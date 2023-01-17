@@ -24,3 +24,7 @@ If you roll one "star": you're allowed to take away one chip from anyone at the 
 If you roll two "star": you're allowed to take two chips away from one opponent or one chip away from two separate opponents.  
 If you roll three "star": It's very rare, but you get to take all the chips from the center and the game resumes.
 
+
+you can try it here.
+
+https://admirable-bombolone-b90759.netlify.app/
