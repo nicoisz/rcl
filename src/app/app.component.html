@@ -1,7 +1,52 @@
 <div class="jumbotron text-center">
-  <button class="btn btn-success btn-lg" (click)="throwDice()">Tirar Dados</button>
-  <br>
-  <img class="img" [ngClass]="rotate? 'dice_rotate': ''" [src]="dice_right" alt="Dado Derecha">
-  <img class="img" [ngClass]="rotate? 'dice_rotate': ''" [src]="dice_center" alt="Dado Centro">
-  <img class="img" [ngClass]="rotate? 'dice_rotate': ''" [src]="dice_left" alt="Dado Izquierda">
+  
+  <div class="container" [ngStyle]="{'display':visible_seccion?'block':'none'}">
+    <h3>¿Cuantos dados lanzaras?</h3>
+    <div class="row justify-content-center">
+      <button class="btn btn-success btn-lg" (click)="quantityDice(1)">
+        1
+      </button>
+      <button class="btn btn-success btn-lg" (click)="quantityDice(2)">
+        2
+      </button>
+      <button class="btn btn-success btn-lg" (click)="quantityDice(3)">
+        3
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="container">
+    <div class="row justify-content-center">
+      <button
+        class="btn btn-success btn-lg"
+        (click)="throwDice()"
+        [ngStyle]="{ display: blockThrowDice ? 'block' : 'none' }"
+      >
+        Tirar Dados
+      </button>
+    </div>
+    <div class="row justify-content-center">
+      <br />
+      <img
+        class="img"
+        [ngClass]="rotate ? 'dice_rotate' : ''"
+        [ngStyle]="{'display': visible_r?'block':'none'}"
+        [src]="dice_right"
+        alt="Dado Derecha"
+      />
+      <img
+        class="img"
+        [ngClass]="rotate ? 'dice_rotate' : ''"
+        [src]="dice_center"
+        alt="Dado Centro"
+      />
+      <img
+        class="img"
+        [ngClass]="rotate ? 'dice_rotate' : ''"
+        [src]="dice_left"
+        [ngStyle]="{'display': visible_l?'block':'none'}"
+        alt="Dado Izquierda"
+      />
+    </div>
+  </div>
 </div>
