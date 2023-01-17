@@ -1,4 +1,5 @@
-# rcl
+# right center left with wild variation game
+
 right center left game
 
 LCR Rules
